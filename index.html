@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenabu Lee Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('images/IMG-20251122-WA0007.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .hero .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* About Me Section */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 50px 20px;
+            background-color: white;
+            max-width: 900px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+        }
+        .about-text {
+            flex: 1;
+        }
+        .about img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+        .portfolio h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .project-box {
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+        }
+        .project-box img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            background-color: #f3f3f3;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about img {
+                width: 100%;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Zenabu Lee Portfolio</h1>
+       <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Discover my projects, skills, and creative journey as a graphic designer.</p>
+        <a href="portfolio.html" class="button">View Portfolio</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I'm Zenabu Lee, a BIT student at Starz University and a professional graphic designer. 
+            I love creating stunning visuals and learning new digital skills.</p>
+        </div>
+        <img src="IMG-20251122-WA0007.jpg" alt="Zenabu Photo">
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-box">
+                <img src="burger.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+            </div>
+            <div class="project-box">
+                <img src="IMG-20251122-WA0007.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+            </div>
+            <div class="project-box">
+                <img src="makeup.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+            </div>
+            <div class="project-box">
+                <img src="RESTURANT copy.jpg" alt="Project 4">
+                <h3>Project 4</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <h2>Subscribe to My Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Zenabu Lee. All rights reserved.
+    </footer>
+
+</body>
+</html>
